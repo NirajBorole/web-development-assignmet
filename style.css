@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --light-black: rgba(0, 0, 0, 0.89);
+    --black: #000;
+    --white: #fff;
+    --grey: #aaa;
+}
+
+nav, footer {
+    background-color: rgba(20, 48, 110, 0.76);
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+}
+
+section {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40rem;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: url(computer-guy.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.hero-text {
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 4rem;
+}
+
+.home > .hero-text, p {
+    margin-left: 5rem;
+}
+
+.image-aboutus-banner {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(https://images.pexels.com/photos/673649/pexels-photo-673649.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.about, .service, .contact {
+    margin-top: 45px;
+}
+
+.imageAboutPage {
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+
+.form .form-txt {
+    flex-basis: 48%;
+}
+
+.form .form-txt h1 {
+    font-weight: 600;
+    color: var(--black);
+    font-size: 40px;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+    color: var(--light-black);
+}
+
+.form .form-txt span {
+    color: var(--light-black);
+    font-size: 14px;
+}
+
+.form .form-txt h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 15px 0;
+    color: var(--light-black);
+}
+
+.form .form-txt p {
+    color: var(--light-black);
+    font-size: 14px;
+}
+
+.form .form-details {
+    flex-basis: 48%;
+}
+
+.form .form-details input[type="text"],
+.form .form-details input[type="email"] {
+    padding: 15px 20px;
+    color: var(--black);
+    outline: none;
+    border: 1px solid var(--grey);
+    margin: 35px 15px;
+    font-size: 14px;
+}
+
+.form .form-details textarea {
+    padding: 15px 20px;
+    margin: 0 15px;
+    color: var(--black);
+    outline: none;
+    border: 1px solid var(--grey);
+    font-size: 14px;
+    resize: none;
+}
+
+.form .form-details button {
+    padding: 15px 25px;
+    color: var(--white);
+    font-weight: 500;
+    background: var(--black);
+    outline: none;
+    border: none;
+    margin: 15px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+    .form .form-details button {
+        margin-left: 0;
+    }
+    .form .form-details input[type="text"],
+    .form .form-details input[type="email"],
+    .form .form-details textarea {
+        width: 100%;
+        margin-left: 0;
+    }
+    .form .form-details input[type="text"] {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        padding: 5rem 0 5rem;
+        display: block;
+    }
+
+    .home > img {
+        max-width: 318px;
+        background-position: center;
+        background-size: contain;
+    }
+    
+    section {
+        height: max-content;
+    }
+    
+}
